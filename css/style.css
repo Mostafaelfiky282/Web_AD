@@ -1,0 +1,196 @@
+:root{
+  --bg: #0B0F14;
+  --card: rgba(255,255,255,.06);
+  --card2: #111827;
+  --text: #ffffff;
+  --muted: rgba(255,255,255,.65);
+  --muted2: rgba(255,255,255,.45);
+  --border: rgba(255,255,255,.12);
+  --green: #84cc16;
+}
+
+.page-dark{
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Syne", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.section-dark{ background: var(--bg); }
+
+.py-lg-6{
+  padding-top: 4.5rem !important;
+  padding-bottom: 4.5rem !important;
+}
+
+/* Hero */
+.hero-web{
+  padding: 11rem 0;
+  background: linear-gradient(135deg, #a3e635, #16a34a);
+  overflow: hidden;
+}
+
+.hero-title{
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  font-weight: 900;
+  letter-spacing: .06em;
+}
+
+.hero-curve{
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 160px;
+  background: var(--bg);
+  clip-path: ellipse(50% 100% at 50% 100%);
+}
+
+.text-primary-green{ color: var(--green) !important; }
+.border-white-10{ border-color: rgba(255,255,255,.10) !important; }
+
+/* Image box */
+.img-box{
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,.35);
+}
+.img-box img{
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Stats */
+.stat-box .stat-num{
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1;
+}
+.stat-box .stat-label{
+  margin-top: .35rem;
+  font-size: .85rem;
+  letter-spacing: .18em;
+  color: rgba(255,255,255,.85);
+}
+
+/* Steps */
+.step-card{
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: transform .25s ease, background .25s ease, border-color .25s ease;
+}
+.step-card:hover{
+  transform: translateY(-4px);
+  background: rgba(255,255,255,.08);
+  border-color: rgba(255,255,255,.14);
+}
+
+/* CTA */
+.btn-cta{
+  background: rgba(255,255,255,.14) !important;
+  border: 1px solid rgba(255,255,255,.22) !important;
+  color: #fff !important;
+  border-radius: 999px !important;
+  padding: .75rem 1.2rem !important;
+  font-weight: 700 !important;
+  transition: transform .2s ease, background .2s ease, border-color .2s ease;
+}
+.btn-cta:hover{
+  background: rgba(255,255,255,.22) !important;
+  border-color: rgba(255,255,255,.35) !important;
+  transform: translateY(-2px);
+}
+
+.cta-strip{
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 18px;
+  padding: 1.25rem 1.25rem;
+}
+
+/* Our Works Card */
+.work-media{
+  background: var(--card2);
+  border-radius: 18px;
+  padding: 1.25rem;
+}
+.work-media a{
+  display: block;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.work-img{
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
+  transition: transform .35s ease;
+}
+.work-card:hover .work-img{ transform: scale(1.03); }
+
+.work-body{ padding: 1rem 0 0 1rem; }
+
+.work-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .55rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.35);
+  color: rgba(255,255,255,.75);
+  text-decoration: none;
+  font-size: .8rem;
+  font-weight: 700;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+.work-btn:hover{
+  background: rgba(255,255,255,.08);
+  color: #fff;
+  border-color: rgba(255,255,255,.45);
+}
+
+.work-title{
+  margin-top: .75rem;
+  margin-bottom: .2rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.work-meta{
+  margin: 0;
+  color: var(--muted2);
+  font-size: .9rem;
+}
+
+/* Pagination Dark */
+.pagination-dark .page-link{
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.18);
+  color: rgba(255,255,255,.75);
+  border-radius: 12px;
+  margin: 0 .25rem;
+  padding: .5rem .85rem;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+.pagination-dark .page-link:hover{
+  background: rgba(255,255,255,.08);
+  color: #fff;
+  border-color: rgba(255,255,255,.30);
+}
+.pagination-dark .page-item.active .page-link{
+  background: rgba(255,255,255,.12);
+  border-color: rgba(255,255,255,.35);
+  color: #fff;
+}
+.pagination-dark .page-item.disabled .page-link{
+  opacity: .45;
+}
+
+/* Responsive */
+@media (max-width: 575.98px){
+  .hero-web{ padding: 7rem 0; }
+  .work-img{ height: 280px; }
+  .work-body{ padding-left: .5rem; }
+}
