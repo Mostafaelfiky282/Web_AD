@@ -9,10 +9,14 @@
   --green: #84cc16;
 }
 
+body{
+ 
+  font-family: 'Inter', sans-serif;
+    
+}
 .page-dark{
   background: var(--bg);
   color: var(--text);
-  font-family: "Syne", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
 .section-dark{ background: var(--bg); }
