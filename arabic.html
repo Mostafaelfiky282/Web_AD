@@ -1,28 +1,36 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <title>Web Development</title>
+    <title>تطوير المواقع</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap RTL -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
       rel="stylesheet"
     />
+
+    <!-- Bootstrap Icons -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
       rel="stylesheet"
     />
+
+    <!-- Fonts -->
     <link href="https://fonts.cdnfonts.com/css/syne" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="shortcut icon"
       href="images/web.jpeg"
       style="border-radius: 50%"
       type="image/x-icon"
     />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -30,63 +38,59 @@
   <body class="page-dark">
     <main>
       <!-- Hero -->
-<section class="hero-web text-white position-relative">
+      <section class="hero-web text-white position-relative">
+        <!-- Language Switch -->
+        <div class="position-absolute top-0 start-0 p-3">
+          <a
+            href="index.html"
+            class="btn btn-outline-light btn-sm d-flex align-items-center gap-1"
+            aria-label="Switch Language"
+          >
+            <i class="bi bi-translate"></i>
+            EN
+          </a>
+        </div>
 
-  <!-- Language Switch -->
-  <div class="position-absolute top-0 end-0 p-3">
-    <a
-      href="arabic.html"
-      class="btn btn-outline-light btn-sm d-flex align-items-center gap-1"
-      aria-label="Switch Language"
-    >
-      <i class="bi bi-translate"></i>
-      AR
-    </a>
-  </div>
+        <div class="container text-center">
+          <h1 class="hero-title text-uppercase mb-3">تطوير المواقع</h1>
 
-  <div class="container text-center">
-    <h1 class="hero-title text-uppercase mb-3">Web Development</h1>
-
-    <a
-      class="btn btn-cta btn-lg"
-      href="https://wa.me/201553132233"
-      target="_blank"
-      aria-label="Chat on WhatsApp"
-    >
-      <i class="bi bi-whatsapp me-2"></i>
-      Chat on WhatsApp
-    </a>
-  </div>
-</section>
-
+          <a
+            class="btn btn-cta btn-lg"
+            href="https://wa.me/201553132233"
+            target="_blank"
+            aria-label="التواصل عبر واتساب"
+            rel="noopener"
+          >
+            <i class="bi bi-whatsapp ms-2"></i>
+            تواصل عبر واتساب
+          </a>
+        </div>
+      </section>
 
       <!-- Description -->
       <section class="section-dark py-5 py-lg-6">
         <div class="container">
           <div class="row g-5 align-items-center py-4 py-lg-5">
-            <div class="col-lg-6">
-              <p class="text-primary-green fw-semibold small mb-2">
-                DESCRIPTION
-              </p>
+            <div class="col-lg-6 order-2 order-lg-1">
+              <p class="text-primary-green fw-semibold small mb-2">الوصف</p>
 
               <h2 class="display-6 fw-bold lh-sm mb-4">
-                We believe in the power of web applications to support real
-                business growth.
+                نؤمن بقوة تطبيقات ومواقع الويب في دعم نمو الأعمال بشكل حقيقي.
               </h2>
 
               <p class="text-white-75 mb-0">
-                We design and develop fast, reliable, and user-friendly websites
-                that balance performance, visual clarity, and smooth user
-                experience. Every solution we build is designed to attract
-                users, keep them engaged, and turn visits into real results.
+                نقوم بتصميم وتطوير مواقع سريعة وموثوقة وسهلة الاستخدام، تجمع بين
+                الأداء العالي والوضوح البصري وتجربة مستخدم سلسة. كل حل نقدمه
+                مُصمم لجذب الزوار، الحفاظ على تفاعلهم، وتحويل الزيارات إلى نتائج
+                ملموسة.
               </p>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 order-1 order-lg-2">
               <div class="img-box">
                 <img
                   src="images/web.jpeg"
-                  alt="Team collaborating on web development"
+                  alt="فريق يعمل على تطوير المواقع"
                   class="w-100"
                 />
               </div>
@@ -98,64 +102,60 @@
             <div class="col-md-6">
               <div class="stat-box">
                 <div class="stat-num">100%</div>
-                <div class="stat-label">CLIENTS SATISFACTION</div>
+                <div class="stat-label">رضا العملاء</div>
               </div>
             </div>
 
             <div class="col-md-6">
               <div class="stat-box">
                 <div class="stat-num">92</div>
-                <div class="stat-label">PROJECTS COMPLETED</div>
+                <div class="stat-label">مشروع مُكتمل</div>
               </div>
             </div>
           </div>
 
           <!-- Our Approach -->
           <div class="pt-5 pt-lg-6">
-            <p class="text-primary-green fw-semibold small mb-2">
-              OUR APPROACH
-            </p>
-            <h2 class="display-6 fw-bold mb-4 mb-lg-5">HOW IT WORK</h2>
+            <p class="text-primary-green fw-semibold small mb-2">منهجنا</p>
+            <h2 class="display-6 fw-bold mb-4 mb-lg-5">كيف نعمل</h2>
 
             <div class="row g-4">
               <div class="col-sm-6 col-lg-3">
                 <div class="step-card h-100">
-                  <h3 class="h5 fw-bold mb-2">01. Product Discovery</h3>
+                  <h3 class="h5 fw-bold mb-2">01. اكتشاف المنتج</h3>
                   <p class="text-white-75 mb-0">
-                    We start with a focused session to understand your product
-                    goals, main challenges, and business requirements.
+                    نبدأ بجلسة مركزة لفهم أهدافك، التحديات الأساسية، ومتطلبات
+                    العمل.
                   </p>
                 </div>
               </div>
 
               <div class="col-sm-6 col-lg-3">
                 <div class="step-card h-100">
-                  <h3 class="h5 fw-bold mb-2">02. Web Development Planning</h3>
+                  <h3 class="h5 fw-bold mb-2">02. تخطيط التطوير</h3>
                   <p class="text-white-75 mb-0">
-                    We define the technical needs, structure, and features
-                    required to build a fast and reliable web solution.
+                    نحدد الاحتياجات التقنية والبنية والخصائص المطلوبة لبناء حل
+                    ويب سريع وموثوق.
                   </p>
                 </div>
               </div>
 
               <div class="col-sm-6 col-lg-3">
                 <div class="step-card h-100">
-                  <h3 class="h5 fw-bold mb-2">
-                    03. Branding &amp; Visual Direction
-                  </h3>
+                  <h3 class="h5 fw-bold mb-2">03. الهوية والتوجه البصري</h3>
                   <p class="text-white-75 mb-0">
-                    We align the brand look and feel by defining visual
-                    direction, style, and design goals.
+                    نُوحّد الشكل العام للعلامة من خلال تحديد الأسلوب والتوجه
+                    البصري وأهداف التصميم.
                   </p>
                 </div>
               </div>
 
               <div class="col-sm-6 col-lg-3">
                 <div class="step-card h-100">
-                  <h3 class="h5 fw-bold mb-2">04. UI/UX Design & Experience</h3>
+                  <h3 class="h5 fw-bold mb-2">04. تصميم UI/UX وتجربة الاستخدام</h3>
                   <p class="text-white-75 mb-0">
-                    We design clear and user-friendly interfaces that create a
-                    smooth experience and support your business objectives.
+                    نصمم واجهات واضحة وسهلة الاستخدام تمنح تجربة سلسة وتخدم
+                    أهداف عملك.
                   </p>
                 </div>
               </div>
@@ -168,20 +168,20 @@
               >
                 <div>
                   <h3 class="h4 fw-bold mb-1">
-                    Ready to build your next web solution?
+                    جاهز لبناء حل الويب القادم الخاص بك؟
                   </h3>
                   <p class="text-white-75 mb-0">
-                    Let’s talk about your project and turn your idea into a real
-                    product.
+                    دعنا نتحدث عن مشروعك ونحوّل فكرتك إلى منتج حقيقي.
                   </p>
                 </div>
                 <a
                   class="btn btn-cta"
                   href="https://wa.me/201553132233"
                   target="_blank"
+                  rel="noopener"
                 >
-                  <i class="bi bi-whatsapp me-2"></i>
-                  WhatsApp Us
+                  <i class="bi bi-whatsapp ms-2"></i>
+                  تواصل على واتساب
                 </a>
               </div>
             </div>
@@ -192,15 +192,11 @@
       <!-- Our Works -->
       <section class="section-dark py-5">
         <div class="container">
-          <div
-            class="text-center mb-4 mb-lg-5 mx-auto"
-            style="max-width: 720px"
-          >
-            <h2 class="display-6 fw-bold mb-2">Our Works</h2>
+          <div class="text-center mb-4 mb-lg-5 mx-auto" style="max-width: 720px">
+            <h2 class="display-6 fw-bold mb-2">أعمالنا</h2>
             <p class="text-white-50 mb-0">
-              Every project tells a story. Not just projects, real solutions
-              built with real clients. Take a look at how our work has helped
-              brands grow across different industries.
+              كل مشروع لديه قصة. ليست مجرد أعمال، بل حلول حقيقية بعملاء حقيقيين.
+              شاهد كيف ساعدت أعمالنا العلامات التجارية على النمو عبر مجالات مختلفة.
             </p>
           </div>
 
@@ -209,7 +205,7 @@
 
           <!-- Pagination -->
           <div class="d-flex justify-content-center mt-4">
-            <nav aria-label="Works pagination">
+            <nav aria-label="ترقيم صفحات الأعمال">
               <ul
                 id="worksPagination"
                 class="pagination pagination-dark mb-0"
@@ -223,18 +219,19 @@
               class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-3"
             >
               <div>
-                <h3 class="h4 fw-bold mb-1">Want a website like these?</h3>
+                <h3 class="h4 fw-bold mb-1">تريد موقعًا مثل هذه الأعمال؟</h3>
                 <p class="text-white-75 mb-0">
-                  Call us now and we’ll help you choose the right solution.
+                  تواصل معنا الآن وسنساعدك في اختيار الحل المناسب.
                 </p>
               </div>
               <a
                 class="btn btn-cta btn-lg"
                 href="https://wa.me/201553132233"
                 target="_blank"
+                rel="noopener"
               >
-                <i class="bi bi-whatsapp me-2"></i>
-                Start on WhatsApp
+                <i class="bi bi-whatsapp ms-2"></i>
+                ابدأ عبر واتساب
               </a>
             </div>
           </div>
@@ -252,126 +249,126 @@
           link: "https://smartmedicalsolutions.store/",
           img: "images/web1.jpeg",
           name: "Smart Medical Solutions",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://alrawad.co/",
           img: "images/web2.jpeg",
           name: "Alrwad Company",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://rawnaqdecor.com/",
           img: "images/web3.jpeg",
           name: "Rawnaq Decor",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://elra3yeg.com/",
           img: "images/web4.jpeg",
           name: "El-ra3y",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://ahmednomany.com/",
           img: "images/web5.jpeg",
           name: "Ahmed Nomany",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://citypharmaeg.com/",
           img: "images/web6.jpeg",
           name: "City Pharma",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://setrafactory.com/",
           img: "images/web7.jpeg",
           name: "Setra Factory",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://grassartssa.com/",
           img: "images/web8.jpeg",
           name: "Grass Artssa",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://alburlis.com//",
           img: "images/web9.jpeg",
           name: "Alburlis",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://shamselebdaa.com/",
           img: "images/web10.jpeg",
           name: "Shams Elebdaa",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://www.egy-car.com/",
           img: "images/web11.jpeg",
           name: "Egy Car",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://wahafruit.com/",
           img: "images/web12.jpeg",
           name: "Waha Fruit",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://acliniccare.com/",
           img: "images/web13.jpeg",
           name: "Aclinic Care",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://irisgeeks.com/",
           img: "images/web14.jpeg",
           name: "Irisgeeks",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://carmchocolates.gb-sa.com/",
           img: "images/web15.jpeg",
           name: "Carm Chocolates",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://deiaamotors.com/",
           img: "images/web17.jpeg",
           name: "Diaa Motors",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://code-h.store/",
           img: "images/web18.jpeg",
           name: "Code-h",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://adlers-eg.com/",
           img: "images/web19.jpeg",
           name: "Adlers",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://zaljawdah.com/",
           img: "images/web20.jpeg",
           name: "Zawit Elgoda",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
         {
           link: "https://opel-market.com/",
           img: "images/web21.jpeg",
           name: "Opel Market",
-          title: "Category: Web App Development.",
+          title: "التصنيف: تطوير تطبيق/موقع ويب.",
         },
       ];
 
       // ===== Settings =====
-      const itemsPerPage = 4; // غيري الرقم براحتك
+      const itemsPerPage = 4; // غير الرقم براحتك
       let currentPage = 1;
 
       // ===== Elements =====
@@ -420,8 +417,8 @@
 
             <div class="work-body">
               <a href="${link}" target="_blank" rel="noopener" class="work-btn">
-                View Project
-                <i class="bi bi-arrow-right"></i>
+                مشاهدة المشروع
+                <i class="bi bi-arrow-left"></i>
               </a>
 
               <h3 class="work-title">${name}</h3>
@@ -443,12 +440,7 @@
           return;
         }
 
-        const makeItem = (
-          label,
-          targetPage,
-          disabled = false,
-          active = false,
-        ) => `
+        const makeItem = (label, targetPage, disabled = false, active = false) => `
       <li class="page-item ${disabled ? "disabled" : ""} ${active ? "active" : ""}">
         <button class="page-link" type="button" data-page="${targetPage}" ${disabled ? "disabled" : ""}>
           ${label}
@@ -466,11 +458,11 @@
 
         let html = "";
 
-        // Prev
+        // Prev (في RTL سهم يمين)
         html += makeItem(
-          `<i class="bi bi-chevron-left"></i>`,
+          `<i class="bi bi-chevron-right"></i>`,
           page - 1,
-          page === 1,
+          page === 1
         );
 
         // First + dots
@@ -489,19 +481,14 @@
         if (end < totalPages) {
           if (end < totalPages - 1)
             html += `<li class="page-item disabled"><span class="page-link">…</span></li>`;
-          html += makeItem(
-            String(totalPages),
-            totalPages,
-            false,
-            page === totalPages,
-          );
+          html += makeItem(String(totalPages), totalPages, false, page === totalPages);
         }
 
-        // Next
+        // Next (في RTL سهم شمال)
         html += makeItem(
-          `<i class="bi bi-chevron-right"></i>`,
+          `<i class="bi bi-chevron-left"></i>`,
           page + 1,
-          page === totalPages,
+          page === totalPages
         );
 
         worksPagination.innerHTML = html;
